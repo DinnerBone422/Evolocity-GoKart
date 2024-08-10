@@ -1,0 +1,29 @@
+:root {
+    --roncalli-red: rgba(128, 29, 57, 1);
+    --roncalli-blue: rgba(102, 196, 208, 1);
+    --roncalli-yellow: rgb(255, 194, 14);
+    --background: rgb(43, 43, 43);
+    --text-light: rgb(255, 255, 255);
+    --text-dark: rgb(0, 0, 0);
+}
+
+html{
+    background-color: var(--background);
+}
+
+nav{
+    background-color: var(--roncalli-red);
+    padding: 1.5rem 3rem 1rem 3rem;
+    margin: -1rem;
+    border-color: var(--roncalli-blue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+nav a{
+    color: var(--text-light);
+    font-size: 2rem;
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
