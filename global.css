@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 :root {
     --roncalli-red: rgba(128, 29, 57, 1);
     --roncalli-blue: rgba(102, 196, 208, 1);
@@ -5,25 +7,163 @@
     --background: rgb(43, 43, 43);
     --text-light: rgb(255, 255, 255);
     --text-dark: rgb(0, 0, 0);
+    --link-light:rgb(185, 185, 185);
+    --link-dark:rgb(90, 90, 90);
+    --link-light-hover:rgb(240, 240, 240);
+    --link-dark-hover:rgb(15, 15, 15);
 }
 
-html{
+*{
+    box-sizing: border-box;
+}
+
+html, body{
     background-color: var(--background);
+    margin: 0rem;
 }
 
 nav{
+    margin: 0rem;
     background-color: var(--roncalli-red);
-    padding: 1.5rem 3rem 1rem 3rem;
-    margin: -1rem;
-    border-color: var(--roncalli-blue);
-    display: flex;
-    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: var(--roncalli-yellow);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: inline-flex;
     justify-content:space-between;
+    align-items: center;
 }
-nav a{
+
+nav .teamName{
+    color: #eeeeee;
+    font-family: "Bungee Shade", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+}
+
+nav .buttons{
+    margin: 0rem 1rem;
+}
+
+nav .button{
     color: var(--text-light);
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+    background-color: rgb(50, 50, 50);
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0.5rem;
+    transition-duration: 1s;
+    transition: all 1s;
+}
+
+nav .button:hover{
+    font-weight: bold;
+    background-color: rgb(20, 20, 20);
+    transition-duration: 1s;
+    transition: all 1s;
+}
+
+header{
+    background-image: url("https://placehold.co/2000x700.png?text=Add+Group+Image+Here");
+    background-color: var(--roncalli-blue);
+    min-height: min(75vh, 32.5rem);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    display: flex;
+}
+
+header .headerText{
+    flex-basis: 40%;
+    text-align: center;
+    align-self: center;
+    padding: 2rem;
+}
+
+header h1{
+    font-family: "Bungee Shade", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: transparent;
+    background: linear-gradient(90deg, rgb(245, 0, 0), rgb(0, 0, 240), rgb(245, 0, 0));
+    background-size: 25%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    font-size: 3em;
+    margin: 0rem;
+}
+
+main{
+    margin: -1rem 2rem 1rem 2rem;
+    color: var(--text-light);
+}
+
+main h1{
+    color: var(--text-light);
+    font-size: 3rem;
+    margin: 3rem 0rem 0rem 0rem;
+    letter-spacing: 0.1rem;
+}
+
+main p{
+    font-size: 1.5rem;
+}
+
+main a{
+    color: var(--link-light);
+}
+
+main a:hover{
+    color: var(--link-light-hover);
+}
+
+footer{
+    background-color: var(--roncalli-red);
+    border-style: solid;
+    border-width: 1rem;
+    border-color: var(--roncalli-yellow);
+    min-height: 15rem;
+    color: var(--text-light);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+footer .rightSide{
+    
+    
+}
+
+footer h1{
+    font-family: "Bungee Shade", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     font-size: 2rem;
-    display: inline-flexbox;
-    flex-wrap: wrap;
-    justify-content:space-around;
+    margin: 0rem 0rem;
+}
+
+footer h2{
+
+}
+
+footer p{
+
 }
