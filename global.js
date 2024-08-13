@@ -6,12 +6,12 @@ function openCloseMenuFunction() {
   if (menuState == 0) { //Menu Opened
     document.getElementById("menu").style.transform = "translateX(0)";
     document.getElementById("MenuOpenCloseButton").innerHTML = "close";
-    document.getElementById("menu").style.width = "100%";
+    document.getElementById("menu").style.display = "block";
     menuState = 1;
   } else { //Menu Closed
     document.getElementById("menu").style.transform = "translateX(100%)";
     document.getElementById("MenuOpenCloseButton").innerHTML = "menu";
-    document.getElementById("menu").style.width = "0%";
+    document.getElementById("menu").style.display = "none";
     menuState = 0;
   }
 }
