@@ -3,15 +3,17 @@ var menuState = 0;
 
 // When this function is called the navigation menu is opened
 function openCloseMenuFunction() {
-    if (menuState == 0) {
-        document.getElementById("menu").style.transform = "translateX(0)";
-        document.getElementById("MenuOpenCloseButton").innerHTML = "close";
-        menuState = 1;
-    } else {
-        document.getElementById("menu").style.transform = "translateX(100%)";
-        document.getElementById("MenuOpenCloseButton").innerHTML = "menu";
-        menuState = 0;
-    }
+  if (menuState == 0) { //Menu Opened
+    document.getElementById("menu").style.transform = "translateX(0)";
+    document.getElementById("MenuOpenCloseButton").innerHTML = "close";
+    document.getElementById("menu").style.width = "0%";
+    menuState = 1;
+  } else { //Menu Opened
+    document.getElementById("menu").style.transform = "translateX(100%)";
+    document.getElementById("MenuOpenCloseButton").innerHTML = "menu";
+    document.getElementById("menu").style.width = "100%";
+    menuState = 0;
+  }
 }
 
 // When the user scrolls down 20px from the top of the document, show the button
