@@ -1,5 +1,16 @@
+/*Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
+/*Import icons from Google Icons*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+/*Set colours as variables to be used throughout the webpage*/
 :root {
     --roncalli-red: rgba(128, 29, 57, 1);
     --roncalli-blue: rgba(102, 196, 208, 1);
@@ -13,6 +24,7 @@
     --link-dark-hover:rgb(15, 15, 15);
 }
 
+/*Set styles that are to be applied throughout the page*/
 *{
     box-sizing: border-box;
 }
@@ -23,6 +35,7 @@ html, body{
     margin: 0rem;
 }
 
+/*Set the styles for the navigation menu(s)*/
 nav{
     margin: 0rem;
     background-color: var(--roncalli-red);
@@ -32,10 +45,8 @@ nav{
     padding: 1rem 1.5rem 1rem 1.5rem;
     display: grid;
     grid-template-columns: auto auto;
+    height: 5.5rem;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     display: inline-flex;
     justify-content:space-between;
     align-items: center;
@@ -67,17 +78,96 @@ nav .button{
     cursor: pointer;
     padding: 0.75rem 1rem;
     margin: 0.25rem 0.5rem;
-    transition-duration: 1s;
-    transition: all 1s;
+    transition: all;
+    transition-duration: 0.25s;
 }
 
 nav .button:hover{
-    font-weight: bold;
     background-color: rgb(20, 20, 20);
-    transition-duration: 1s;
-    transition: all 1s;
 }
 
+nav .menuButton{
+    color: var(--link-light);
+    font-size: 3rem;
+    display: block;
+    transition: all;
+    transition-duration: 0.25s;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+nav .menuButton:hover{
+    color: var(--link-light-hover);
+}
+
+menu{
+    margin: 0rem;
+    background-color: var(--roncalli-red);
+    border-style: solid;
+    border-width: 0rem 0.5rem 0.5rem 0.5rem;
+    border-color: var(--roncalli-yellow);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    height: calc(100vh - 5.5rem);
+    width: 100%;
+    position: absolute;
+    top: 5.5rem;
+    left: 0%;
+    transform: translateX(100%);
+}
+
+menu .buttons{
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+menu .button{
+    color: var(--text-light);
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+    background-color: rgb(50, 50, 50);
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0rem;
+    transition: all;
+    transition-duration: 0.25s;
+}
+
+menu .button:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+nav .menuButton{
+    display: none;
+}
+
+menu {
+    display: none;
+}
+
+/*Set the styles for the navigation menu specifically on smaller screens*/
+@media (max-width: 1255px) {
+    nav .buttons {
+        display: none;
+    }
+
+    nav .menuButton {
+        display: block;
+    }
+
+    menu{
+        display: block;
+    }
+}
+
+
+/*Set the styles for the page Header/Hero*/
 header{
     background-image: url("https://placehold.co/2000x700.png?text=Add+Group+Image+Here");
     background-color: var(--roncalli-blue);
@@ -111,6 +201,7 @@ header h1{
     margin: 0rem;
 }
 
+/*Set the basic styles for the main content in the page*/
 main{
     margin: -1rem 2rem 1rem 2rem;
     color: var(--text-light);
@@ -135,6 +226,7 @@ main a:hover{
     color: var(--link-light-hover);
 }
 
+/*Set the styles for the footer*/
 footer{
     background-color: var(--roncalli-red);
     border-style: solid;
@@ -169,5 +261,8 @@ footer h2{
 @media (max-width: 1055px) {
     footer{
         grid-template-columns: auto;
+    }
+    footer h1{
+        font-size: max(8vw, 2rem);
     }
 }
