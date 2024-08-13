@@ -36,6 +36,10 @@ html, body{
 }
 
 /*Set the styles for the navigation menu(s)*/
+.navigation{
+    overflow-x: hidden;
+}
+
 nav{
     margin: 0rem;
     background-color: var(--roncalli-red);
@@ -102,7 +106,6 @@ nav .menuButton:hover{
 }
 
 menu{
-    overflow-x: hidden;
     background-color: var(--roncalli-red);
     border-style: solid;
     border-width: 0rem 0.5rem 0.5rem 0.5rem;
