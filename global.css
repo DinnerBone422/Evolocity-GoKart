@@ -166,6 +166,29 @@ menu {
     }
 }
 
+/*Set the styles for the scroll to top Button*/
+.ScrollToTopButton{
+    display: none;
+    color: var(--link-light);
+    background-color: var(--roncalli-red);
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: var(--roncalli-yellow);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    transition: all;
+    transition-duration: 0.25s;
+}
+
+.ScrollToTopButton:hover{
+    color: var(--link-light-hover);
+}
 
 /*Set the styles for the page Header/Hero*/
 header{
@@ -230,7 +253,7 @@ main a:hover{
 footer{
     background-color: var(--roncalli-red);
     border-style: solid;
-    border-width: 1rem;
+    border-width: 0.5rem;
     border-color: var(--roncalli-yellow);
     min-height: 15rem;
     color: var(--text-light);
