@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!--Add title and favicon-->
     <title>Popemobile</title>
     <link rel="icon" type="image/jpg" href="/Assets/Local/Icons/Transparent Icon.png">
+    
 
     <!--Link Global and Local CSS Files-->
     <link rel="stylesheet" type="text/css" href="/global.css"><!--Global-->
@@ -27,36 +28,39 @@
 
 <!--Content On The Page-->
 <body>
-    <!--Navigation Bar with Team Name-->
-    <nav>
-        <div class="teamNameContainer">
-            <a href="/home/" class="teamName">Popemobile</a>
-        </div>
-        <div class="buttons">
-            <a href="/home/" class="button">Home</a>
-            <a href="/home/" class="button">Also Home</a>
-            <a href="/home/" class="button">Yet another Home</a>
-            <a href="/home/" class="button">House?</a>
-        </div>
-        <span class="material-symbols-outlined menuButton" id="MenuOpenCloseButton" onclick="openCloseMenuFunction()">
-            menu
-        </span>
-    </nav>
+    <!--Container for both types of Navigation Menu's-->
+    <div class="navigation">
+        <!--Navigation Bar with Team Name-->
+        <nav>
+            <div class="teamNameContainer">
+                <a href="/home/" class="teamName">Popemobile</a>
+            </div>
+            <div class="buttons">
+                <a href="/home/" class="button">Home</a>
+                <a href="/home/" class="button">Also Home</a>
+                <a href="/home/" class="button">Yet another Home</a>
+                <a href="/home/" class="button">House?</a>
+            </div>
+            <span class="material-symbols-outlined menuButton" id="MenuOpenCloseButton" onclick="openCloseMenuFunction()">
+                menu
+            </span>
+        </nav>
 
+        <!--Navigation Menu with Team Name-->
+        <menu id="menu">
+            <div class="buttons">
+                <a href="/home/" class="button">Home</a>
+                <a href="/home/" class="button">Also Home</a>
+                <a href="/home/" class="button">Yet another Home</a>
+                <a href="/home/" class="button">House?</a>
+            </div>
+        </menu>
+    </div>
+    
     <!--Scroll to top Button-->
     <span class="material-symbols-outlined ScrollToTopButton" id="ScrollToTopButton" onclick="scrollToTopFunction()">
         arrow_upward
     </span>
-
-    <!--Navigation Menu with Team Name-->
-    <menu id="menu">
-        <div class="buttons">
-            <a href="/home/" class="button">Home</a>
-            <a href="/home/" class="button">Also Home</a>
-            <a href="/home/" class="button">Yet another Home</a>
-            <a href="/home/" class="button">House?</a>
-        </div>
-    </menu>
 
     <!--Team Name Some Text And Team Image-->
     <header>
