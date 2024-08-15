@@ -4,14 +4,15 @@ var menuState = 0;
 // When this function is called the navigation menu is opened
 function openCloseMenuFunction() {
   if (menuState == 0) { //Menu Opened
+    document.getElementById("menu").style.display = "block";
     document.getElementById("menu").style.transform = "translateX(0)";
     document.getElementById("MenuOpenCloseButton").innerHTML = "close";
-    document.getElementById("menu").style.display = "block";
+    
     menuState = 1;
   } else { //Menu Closed
+    document.getElementById("menu").style.display = "none";
     document.getElementById("menu").style.transform = "translateX(100%)";
     document.getElementById("MenuOpenCloseButton").innerHTML = "menu";
-    document.getElementById("menu").style.display = "none";
     menuState = 0;
   }
 }

@@ -30,14 +30,13 @@
 }
 
 html, body{
-    overflow-x: hidden;
     background-color: var(--background);
     margin: 0rem;
 }
 
 /*Set the styles for the navigation menu(s)*/
 .navigation{
-    overflow-x: hidden;
+    contain: paint;
 }
 
 nav{
@@ -47,8 +46,6 @@ nav{
     border-width: 0.5rem;
     border-color: var(--roncalli-yellow);
     padding: 1rem 1.5rem 1rem 1.5rem;
-    display: grid;
-    grid-template-columns: auto auto;
     height: 5.5rem;
     width: 100%;
     display: inline-flex;
