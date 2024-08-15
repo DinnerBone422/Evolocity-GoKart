@@ -30,13 +30,15 @@
 }
 
 html, body{
+    overflow-x: hidden;
     background-color: var(--background);
     margin: 0rem;
 }
 
 /*Set the styles for the navigation menu(s)*/
 .navigation{
-    contain: paint;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav{
@@ -111,7 +113,7 @@ menu{
     height: calc(100vh - 5.5rem);
     width: 100%;
     margin: 0rem;
-    position: absolute;
+    position: fixed;
     top: 5.5rem;
     left: 0%;
     transform: translateX(100%);
@@ -169,7 +171,7 @@ menu {
 
 /*Set the styles for the scroll to top Button*/
 .ScrollToTopButton{
-    display: none;
+    
     color: var(--link-light);
     background-color: var(--roncalli-red);
     border-style: solid;
@@ -177,6 +179,7 @@ menu {
     border-color: var(--roncalli-yellow);
     border-radius: 1rem;
     padding: 0.5rem;
+    display: none;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
