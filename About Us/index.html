@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Add title and favicon-->
+    <title>Popemobile</title>
+    <link rel="icon" type="image/jpg" href="/Assets/Local/Icons/Transparent Icon.png">
+    
+
+    <!--Link Global and Local CSS Files-->
+    <link rel="stylesheet" type="text/css" href="/global.css"><!--Global-->
+
+    <!--Link Global And Local JS Files-->
+    <script src="/global.js"></script><!--Global-->
+    
+    <!--Addons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<!--Content On The Page-->
+<body>
+    <!--Container for both types of Navigation Menu's-->
+    <div class="navigation">
+        <!--Navigation Bar with Team Name-->
+        <nav>
+            <div class="teamNameContainer">
+                <a href="/home/" class="teamName">Popemobile</a>
+            </div>
+            <div class="buttons">
+                <a href="/home/" class="button">Home</a>
+                <a href="/home/" class="button">Also Home</a>
+                <a href="/home/" class="button">Yet another Home</a>
+                <a href="/home/" class="button">House?</a>
+            </div>
+            <span class="material-symbols-outlined menuButton" id="MenuOpenCloseButton" onclick="openCloseMenuFunction()">
+                menu
+            </span>
+        </nav>
+
+        <!--Navigation Menu with Team Name-->
+        <menu id="menu">
+            <div class="buttons">
+                <a href="/home/" class="button">Home</a>
+                <a href="/home/" class="button">Also Home</a>
+                <a href="/home/" class="button">Yet another Home</a>
+                <a href="/home/" class="button">House?</a>
+            </div>
+        </menu>
+    </div>
+    
+    <!--Scroll to top Button-->
+    <span class="material-symbols-outlined ScrollToTopButton" id="ScrollToTopButton" onclick="scrollToTopFunction()">
+        arrow_upward
+    </span>
+
+    <!--Team Name Some Text And Team Image-->
+    <header>
+        <div class="headerText">
+            <h1>Popemobile</h1>
+            <h2>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius adipisci minus amet? Repellendus, optio? Ipsa nobis beatae, corrupti saepe veritatis nostrum, sequi nisi sit eos facere numquam cupiditate iste similique perspiciatis facilis nihil at tempora dolores inventore nesciunt nemo officiis consectetur rerum adipisci? Sapiente dolorum non quam nisi recusandae.
+            </h2>
+        </div>
+        <div>
+        </div>
+    </header>
+
+    <!--Primary Content Of The Page-->
+    <main>
+        <h1>Pardon our dust—this site is still under construction!</h1>
+        <p>
+            We’re hard at work building something awesome here,
+            but some parts of the site might still be in progress.
+            Thanks for your patience as we fine-tune everything.
+            Check back soon for more updates!
+            <br>
+            — The Popemobile Team
+        </p>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="rightSide">
+            <h1>Popemobile</h1>
+            <h2>Contact Us</h2>
+            <p>00 Welington Street, Parkside, Timaru 7910 New Zealand</p>
+            <p>inquiries@popemobile.co.nz</p>
+        </div>
+        <div class="leftSide">
+            <h2>Support</h2>
+            <h3>Roncalli</h3>
+            <p>
+                Thank you to our school for paving the way and giving us the tools to race toward our goals!
+            </p>
+            <h3>Sponsor</h3>
+            <p>
+                A special thanks to our sponsor for fueling our journey. Your support drives us forward!
+            </p>            
+        </div>
+    </footer>
+</body>
+</html>
