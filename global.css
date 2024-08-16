@@ -48,7 +48,7 @@ nav{
     border-width: 0.5rem;
     border-color: var(--roncalli-yellow);
     padding: 1rem 1.5rem 1rem 1.5rem;
-    height: 5.5rem;
+    min-height: 5.5rem;
     width: 100%;
     display: inline-flex;
     justify-content:space-between;
@@ -169,9 +169,17 @@ menu {
     }
 }
 
+@media (max-width: 1055px) {
+    nav .teamName{
+        font-size: min(8vw, 2.5rem);
+    }
+    nav .menuButton{
+        font-size: min(9vw, 3rem);
+    }
+}
+
 /*Set the styles for the scroll to top Button*/
 .ScrollToTopButton{
-    
     color: var(--link-light);
     background-color: var(--roncalli-red);
     border-style: solid;
@@ -228,21 +236,32 @@ header h1{
     margin: 0rem;
 }
 
+/*Set the styles for the header section specifically on smaller screens*/
+@media (max-width: 500px) {
+    header h1{
+        font-size: min(10vw, 3rem);
+    }
+}
+
 /*Set the basic styles for the main content in the page*/
 main{
     margin: -1rem 2rem 1rem 2rem;
     color: var(--text-light);
 }
 
+main h1, main h2, main h3 { 
+    margin: 1rem 0rem 0rem 0rem;
+}
+
 main h1{
-    color: var(--text-light);
     font-size: 3rem;
-    margin: 3rem 0rem 0rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
     letter-spacing: 0.1rem;
 }
 
 main p{
     font-size: 1.5rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 main a{
@@ -284,7 +303,8 @@ footer h1{
 footer h2{
     text-transform: uppercase;
 }
-    
+
+/*Set the styles for the footer bar specifically on smaller screens*/
 @media (max-width: 1055px) {
     footer{
         grid-template-columns: auto;
