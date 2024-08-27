@@ -155,7 +155,7 @@ menu {
 }
 
 /*Set the styles for the navigation menu specifically on smaller screens*/
-@media (max-width: 1255px) {
+@media (max-width: 1785px) {
     nav .buttons {
         display: none;
     }
