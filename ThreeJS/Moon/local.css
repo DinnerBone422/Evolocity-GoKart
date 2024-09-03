@@ -6,7 +6,6 @@ canvas {
     left: 0;
 }
 
-
 :root {
     --dark-bg: rgba(15, 15, 15, 0.95);
     --spacing: 350px;
@@ -15,7 +14,6 @@ canvas {
     font-weight: 400;
     font-style: normal;
 }
-
 
 main {
     width: 100vw;
