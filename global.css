@@ -236,6 +236,11 @@ header h1{
     margin: 0rem;
 }
 
+.headerImage{
+    flex-basis: 60%;
+    background-color: red;
+}
+
 /*Set the styles for the header section specifically on smaller screens*/
 @media (max-width: 500px) {
     header h1{
