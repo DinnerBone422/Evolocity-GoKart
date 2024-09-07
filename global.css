@@ -204,7 +204,6 @@ menu {
 
 /*Set the styles for the page Header/Hero*/
 header{
-    background-image: url("https://placehold.co/2000x700.png?text=Add+Group+Image+Here");
     background-color: var(--roncalli-blue);
     min-height: min(75vh, 32.5rem);
     background-position: center;
@@ -238,7 +237,7 @@ header h1{
 
 .headerImage{
     flex-basis: 60%;
-    background-color: red;
+    background-image: url(./Assets/Go-Kart.PNG);
 }
 
 /*Set the styles for the header section specifically on smaller screens*/
