@@ -235,7 +235,7 @@ header h1{
     margin: 0rem;
 }
 
-.headerImage{
+header .headerImage{
     flex-basis: 60%;
     background-image: url(./Assets/Go-Kart.PNG);
 }
