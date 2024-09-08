@@ -271,9 +271,8 @@ main p{
     margin: 0rem 0rem 0rem 0rem;
 }
 
-main ul:li{
-    font-size: 3rem;
-
+ul li{
+    font-size: 1.5rem;
 }
 
 main a{
