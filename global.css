@@ -266,7 +266,7 @@ main h1{
     letter-spacing: 0.1rem;
 }
 
-main p{
+main p, main ul, main li{
     font-size: 1.5rem;
     margin: 0rem 0rem 0rem 0rem;
 }
