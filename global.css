@@ -256,14 +256,14 @@ main{
     color: var(--text-light);
 }
 
-main h1, main h2, main h3 { 
-    margin: 1rem 0rem 0rem 0rem;
-}
-
 main h1{
     font-size: 3rem;
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
     letter-spacing: 0.1rem;
+}
+
+main h2, main h3 { 
+    margin: 1rem 0rem 0rem 0rem;
 }
 
 main p, main ul, main li{
