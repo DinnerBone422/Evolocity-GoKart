@@ -238,6 +238,9 @@ header h1{
 header .headerImage{
     flex-basis: 60%;
     background-image: url(./Assets/Go-Kart.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Set the styles for the header section specifically on smaller screens*/
